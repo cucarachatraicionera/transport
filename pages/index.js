@@ -196,8 +196,7 @@ const Home = ({
 }) => {
   return (
     <div className="overflow-hidden max-w-[1600px] mx-auto bg-page">
-      <Hero heroData={heroData} headerData={headerData} 
-      navData={navData} />
+      <Hero heroData={heroData} headerData={headerData} navData={navData} />
       <About aboutData={aboutData} />
       <How howData={howData} />
       <Footer footerData={footerData} />
@@ -225,7 +224,6 @@ const Home = ({
     </div>
   );
 };
-
 
 // get data.json
 export const getStaticProps = async () => {
