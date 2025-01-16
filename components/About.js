@@ -8,7 +8,7 @@ import { fadeInUp, fadeInDown, staggerTextContainer } from "../variants";
 
 const About = ({ aboutData }) => {
   // destructure about data
-  const { title, subtitle, text, boyImg } = aboutData;
+  const { title, subtitle, text } = aboutData; // Eliminamos boyImg porque ya no es necesario
   return (
     <section className="mb-[60px] lg:mb-[160px]">
       <div className="container mx-auto">
@@ -33,11 +33,11 @@ const About = ({ aboutData }) => {
           {/* image */}
           <motion.div variants={fadeInUp} className="flex-1">
             <Image
-              src={boyImg}
+              src="/images/banner.jpeg" // Ruta del banner
               width={575}
               height={480}
-              alt="boy image"
-              title="boy image"
+              alt="Banner image"
+              title="Banner image"
             />
           </motion.div>
         </motion.div>
