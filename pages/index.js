@@ -32,12 +32,12 @@ const navData = [
 ];
 
 const heroData = {
-  title: "Your awesome traffic permit consultant.",
+  title: "Tu aliado confiable en logística y transportes",
   sceneImg: "/images/hero/scene.svg",
   boyImg: "/images/hero/boy.svg",
   girlImg: "/images/hero/girl.svg",
   truckImg: "/images/hero/truck.svg",
-  btnText: "Get Started",
+  btnText: "Comienza",
 };
 
 const aboutData = {

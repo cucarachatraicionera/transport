@@ -12,8 +12,6 @@ import { HiMenu } from "react-icons/hi";
 const Header = ({ headerData, navData }) => {
   const [header, setHeader] = useState(false);
   const [navMobile, setNavMobile] = useState(false);
-  // destructure header data
-  const { logoImgV1, logoImgV2, btnText } = headerData;
 
   useEffect(() => {
     // scroll event
@@ -28,18 +26,19 @@ const Header = ({ headerData, navData }) => {
       className={`${
         header
           ? "bg-white px-3 py-3 rounded-md drop-shadow-primary"
-          : "py-[40px]"
+          : "py-[20px]"
       } fixed w-full left-0 right-0 mx-auto max-w-[90vw] lg:max-w-[1120px] z-20 flex justify-between items-center transition-all duration-500`}
     >
-      {/* logo v1 */}
+      {/* logo */}
       <Link href={"/"}>
         <a>
           <Image
-            src={`${header ? logoImgV2 : logoImgV1}`}
-            width={header ? 180 : 212}
-            height={50}
-            alt="header image"
-            title="header image"
+            src="/images/header/logo.png"
+            width={120} // Tamaño más pequeño
+            height={120} // Mantiene proporción
+            alt="Logo"
+            title="Logo"
+            className="rounded-md"
           />
         </a>
       </Link>
@@ -48,7 +47,7 @@ const Header = ({ headerData, navData }) => {
         {/* nav */}
         <Nav navData={navData} header={header} />
         {/* btn */}
-        <button className="btn">{btnText}</button>
+        <button className="btn">{headerData.btnText}</button>
       </div>
 
       {/* nav menu btn- hide on large screens */}
