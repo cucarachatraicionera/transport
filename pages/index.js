@@ -170,7 +170,7 @@ const testimonialData = {
 const footerData = {
   truckImg: "/images/footer/truck.svg",
   hillImg: "/images/footer/hill.svg",
-  text: "We provide traffic management consultants so you get started quickly, contact us for a quote today!",
+  text: "En JC Logística y Transportes ofrecemos soluciones rápidas y eficientes para tus necesidades de transporte. ¡Contáctanos hoy para una cotización sin compromiso!",
   logo: "/images/footer/projectv1.svg",
   links: [
     { name: "about", href: "/" },
